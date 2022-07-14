@@ -1,2 +1,9 @@
 <h1>Color#index</h1>
 <p>Find me in app/views/color/index.html.erb</p>
+<ul>
+    <% @color.each do |color| %>
+    <li>
+        Name: <%= color.name %> - Element: <%= color.elemental %> - HP: <%= color.hp %> - Atk: <%= color.atk %> - Def: <%= color.def %> - Spd: <%= color.speed %>
+    </li>
+    <% end %>
+</ul>
